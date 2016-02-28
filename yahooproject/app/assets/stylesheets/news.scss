@@ -49,8 +49,178 @@ table {
 }
 // The block above this comment removes browser styling DO NOT REMOVE
 
-// nav,  {
-//   background-color: blue;
-//   height: 50px;
-//   color: white;
-// }
+div#topmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input.form-control {
+	border-radius: 0 !important;
+}
+
+input#my-size {
+	width: 200px;
+}
+
+form.box1 {
+	flex-grow: 4;
+}
+
+a.box2 {
+	flex-grow: 1;
+	margin-left: 200px;
+}
+
+form.navbar-form {
+	margin-right: auto;
+}
+
+a#yahoologo {
+	margin-left: 15px;
+	margin-right: 20px;
+}
+
+div#slider-section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a#slider-image {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+span.vertical-menu {
+	margin-left: 80px;
+	display: flex;
+}
+
+#verticalmenulist {
+	background-color: lightgray;
+ 	flex-direction: column;
+	text-align: center;
+}
+
+#verticalmenulist ul {
+	margin: auto 0;
+}
+
+#verticalmenulist ul li i {
+	margin-top: 7px;
+}
+
+.col-md-5 {
+	margin-left: auto;
+	margin-right: 73px;
+}
+
+h1, #title {
+	font-size: 24px !important;
+}
+
+p, #featuredstoryparagraph {
+	font-size: 14px !important;
+}
+
+#linktofullarticle {
+	font-size: 14px;
+	margin-left: 0px;
+}
+
+.container#secondmenudiv {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+#secondnavbar {
+	display: flex;
+	align-items: center;
+	margin-left: 90px;
+	margin-bottom: 0px !important;
+}
+
+#secondmenubox1 {
+	flex-grow: 2;
+}
+
+#secondmenuitem li {
+	font-size: 12px !important;
+	flex-grow: 1;
+	float: left;
+	padding-right: 20px;
+}
+
+#secondmenubox3 {
+		flex-grow: 1;
+		margin-left: 170px;
+}
+
+#weather {
+	font-size: 10px;
+
+}
+
+span, #dropdownstock {
+	margin-left: 10px;
+}
+
+#midsection {
+	display: flex;
+
+}
+
+#centerbox1 {
+	text-align: center;
+	flex-grow: 2;
+	margin: auto 0;
+}
+
+#centerbox2 {
+	flex-grow: 1;
+}
+
+#centerbox2 ul {
+	font-size: 12px !important;
+
+}
+
+#centerbox2 ul li {
+	margin-bottom: 1em;
+}
+
+#centerbox3 {
+  flex-grow: 4;
+	list-style: none;
+	text-align: left;
+	margin: auto 0;
+}
+
+#spacebetweenarrows {
+	height: 80px;
+}
+
+.container.slider-section-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#featuredstorybottom {
+	margin-left: auto;
+	margin-right: 73px;
+}
+
+#linktofullarticlebottom {
+  margin-left: 0px;
+}
+
+#featuredstoryparagraphbottom {
+	font-size: 14px !important;
+  margin: auto 0;
+
+}

@@ -9,114 +9,131 @@
 
     <header>
 
-      <form class="navbar-form navbar-left">
-        <a href="#" class="navbar-link">
-          <div class="profile-pic">
-            round image
-          </div>
-          </form>
+      <div id="topmenu" class="container">
+        <div class="col-md-1"></div>
+        <form class="navbar-form navbar-left box1" role="search">
+        <a href="#" id="yahoologo">
+          Logo</a>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="" id="my-size">
+        </div>
+        <span class="glyphicon glyphicon-search"></span>
+        </form>
+        <a href="#" class="profile-pic right box2">
+          pic
         </a>
-        <div class="background-image">
-          Yahoo!
-        </div>
-        <div class="search-box">
-          white search box
-        </div>
-        <div class="magnifying-glass">
-          icon
-        </div>
-        <div class="profile-pic">
-          round image
-        </div>
-      </form> <!-- closes top horizontal menu section of header -->
+      </div> <!-- closes top horizontal menu section of header -->
 
-      <div class="slider-image">
-        slider
-      </div>
-
-      <ul class="vertical-menu">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
-        <li>7</li>
-        <li>8</li>
-        <li>9</li>
-        <li>10</li>
-        <li>11</li>
-        <li>12</li>
-      </ul>
-
-      <div class="text-box-on-slider">
-        <h1>Now You See Me: Top Grosser</h1>
-        <p>
-          Hit film starring Jesse Eisenberg rakes in nearly $300MM during opening weekend.
-        </p>
-        <span>
-          Read Full Story
+      <div class="container" id="slider-section">
+        <a href="#" class="background-image" id="slider-image">
+          image
+        </a>
+        <span class="vertical-menu">
+        <span id="verticalmenulist">
+          <ul>
+            <li id="first"><i class="fa fa-envelope"></i></li>
+            <li><i class="fa fa-newspaper-o"></i></li>
+            <li><i class="fa fa-area-chart"></i></li>
+            <li><i class="fa fa-futbol-o"></i></li>
+            <li><i class="fa fa-film"></i></li>
+            <li><i class="fa fa-star"></i></li>
+            <li><i class="fa fa-info"></i></li>
+            <li><i class="fa fa-car"></i></li>
+            <li><i class="fa fa-shopping-bag"></i></li>
+            <li><i class="fa fa-plane"></i></li>
+            <li><i class="fa fa-heart"></i></li>
+            <li><i class="fa fa-briefcase"></i></li>
+          </ul>
         </span>
+</span>
+
+        <span class="col-md-5" id="featured-story">
+          <h1 id="title">Now You See Me: Top Grosser</h1>
+          <p id="featuredstoryparagraph">
+            Hit film starring Jesse Eisenberg rakes in nearly $300MM
+            <br>during opening weekend.
+          </p>
+          <span id="linktofullarticle">
+            Read Full Story
+          </span>
+        </span><!-- closes featured story span -->
+
+      </div><!-- closes slider div -->
+
+      <div class="container" id="secondmenudiv">
+        <nav class="navbar" role="navigation" id="secondnavbar">
+          <div id="secondmenubox1"></div>
+          <ul class="nav nav-bar" id="secondmenuitem">
+            <li >All Stories</li>
+            <li>News</li>
+            <li>Local</li>
+            <li>Entertainment</li>
+            <li>Sports</li>
+            <li>More</li>
+          </ul>
+          <div class="nav navbar-right" id="secondmenubox3">
+          <span id="weather">
+            Baltimore, MD 83&deg;
+          </span>
+          <span>
+            <i id="dropdownstock" class="fa fa-caret-down"></i>
+          </span>
+          </div>
+        </nav>
       </div>
-
-      <span class="horizontal-menu">
-        <ul>
-          <li>All Stories</li>
-          <li>News</li>
-          <li>Local</li>
-          <li>Entertainment</li>
-          <li>Sports</li>
-          <li>More</li>
-        </ul>
-      </span>
-
-      <span>
-        Baltimore, MD 83&deg;
-      </span>
-      <span>
-        arrow
-      </span>
 
     </header> <!-- closes header (top section) of page down to horizontal menu -->
 
-    <div class="mid-section"> <!-- starts mid-section -->
+</br>
+</br>
+    <!-- <div class="col-md-12"></div> -->
 
-      <div class="social-icons">
+    <div class="container" id="midsection"> <!-- starts mid-section -->
+
+      <div class="social-icons" id="centerbox1">
         <span>Twitter</span>
         <span>flickr</span>
       </div>
 
-    <ul>
-      <li>Ocklahoma turns to mammoth task of clean-up after tornado -
-        <span>Los Angeles Times - 1 hour ago</span>
-      </li>
-      <li>Obama, in a Shift, to Limit Targets of Drone Strikes -
-        <span>New York Times - 1 hour ago</span>
-      </li>
-      <li>Major Nelsson teases E3 for Xbox One news -
-      <span>PC World - 4 hours ago</span>
-      <li>US Treasuries, Asian Bonds Fall on Bets Fed to Taper Stimulus -
-        <span>Bloomberg - 5 hours ago</span>
-      </li>
-      <li>Merkel tops Forbes power women's list again -
-        <span>Newsday - 5 hours ago</span>
-      </li>
-    </li>
-    <span>up</span>
-    <span>dwn</span>
-    </ul>
+    <div class="col-sm-5" id="centerbox2">
+      <ul>
+        <li>Ocklahoma turns to mammoth task of clean-up after tornado -
+          <span>Los Angeles Times - 1 hour ago</span>
+        </li>
+        <li>Obama, in a Shift, to Limit Targets of Drone Strikes -
+          <span>New York Times - 1 hour ago</span>
+        </li>
+        <li>Major Nelsson teases E3 for Xbox One news -
+        <span>PC World - 4 hours ago</span>
+        </li>
+        <li>US Treasuries, Asian Bonds Fall on Bets Fed to Taper Stimulus -
+          <span>Bloomberg - 5 hours ago</span>
+        </li>
+        <li>Merkel tops Forbes power women's list again -
+          <span>Newsday - 5 hours ago</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="centerbox3">
+      <li><i class="fa fa-angle-up"></i></li>
+      <div id="spacebetweenarrows"></div>
+      <li><i class="fa fa-angle-down"></i></li>
+    </div>
 
     </div><!--closes mid-section featured stories including up and down arrows -->
 
-    <div class="bottom-section"> <!--starts bottom section -->
-
-      <div class="featured-story">
+    <div class="container slider-section-bottom"> <!--starts bottom section -->
+      <a href="#" class="background-image" id="slider-image">
+        image
+      </a>
+      <span class="col-md-5" id="featuredstorybottom">
         <h1>Yahoo! Acquires Tumblr.</h1>
-        <p>
+        <p id="featuredstoryparagraphbottom">
           Yahoo Inc. has agreed to pay $1.1 billion for Tumblr, a six-year-old company with more than 100 million users but very little revenue, a deal that highlights the shifting balance of power in the technology business.
         </p>
-        <span class="learn-more-button">Learn More</span>
-      </div>
+        <span class="link" id="linktofullarticlebottom" >Learn More</span>
+      </span>
 
     </div> <!-- closes bottom section -->
 
