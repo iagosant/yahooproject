@@ -9,25 +9,26 @@
 
     <header>
 
-      <div id="topmenu" class="container">
-        <div class="col-md-1"></div>
-        <form class="navbar-form navbar-left box1" role="search">
-        <a href="#" id="yahoologo">
-          Logo</a>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="" id="my-size">
-        </div>
-        <span class="glyphicon glyphicon-search"></span>
-        </form>
-        <a href="#" class="profile-pic right box2">
-          pic
-        </a>
-      </div> <!-- closes top horizontal menu section of header -->
-
+      <div class="col-md-12" id="purplebar1">
+        <div id="topmenu" class="container">
+          <div class="col-md-1"></div>
+          <form class="navbar-form navbar-left box1" role="search">
+          <img class="background-image" src="<%= asset_path("yahoo_logo.png") %>" id="yahoologo"/>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="" id="my-size">
+          </div>
+          <span class="glyphicon glyphicon-search"></span>
+          </form>
+          <a href="#" class="profile-pic right box2">
+            pic
+          </a>
+        </div> <!-- closes top horizontal menu section of header -->
+      </div>
       <div class="container" id="slider-section">
         <a href="#" class="background-image" id="slider-image">
           image
         </a>
+        <!-- <img class="background-image" src="<%= asset_path("now-you-see-me-jesse-eisenberg-image.jpg") %>"/>  -->
         <span class="vertical-menu">
         <span id="verticalmenulist">
           <ul>
@@ -45,7 +46,7 @@
             <li><i class="fa fa-briefcase"></i></li>
           </ul>
         </span>
-</span>
+        </span>
 
         <span class="col-md-5" id="featured-story">
           <h1 id="title">Now You See Me: Top Grosser</h1>
@@ -57,39 +58,59 @@
             Read Full Story
           </span>
         </span><!-- closes featured story span -->
-
       </div><!-- closes slider div -->
 
-      <div class="container" id="secondmenudiv">
-        <nav class="navbar" role="navigation" id="secondnavbar">
+      <div class="col-md-12" id="purplebar2">
+        <div class="container" id="secondmenudiv" >
           <div id="secondmenubox1"></div>
-          <ul class="nav nav-bar" id="secondmenuitem">
-            <li >All Stories</li>
-            <li>News</li>
-            <li>Local</li>
-            <li>Entertainment</li>
-            <li>Sports</li>
-            <li>More</li>
-          </ul>
-          <div class="nav navbar-right" id="secondmenubox3">
-          <span id="weather">
-            Baltimore, MD 83&deg;
-          </span>
-          <span>
-            <i id="dropdownstock" class="fa fa-caret-down"></i>
-          </span>
-          </div>
-        </nav>
+          <nav class="navbar" role="navigation" id="secondnavbar">
+            <div id="secondmenubox2">
+            <ul class="nav nav-bar" id="secondmenuitem">
+              <li >All Stories</li>
+              <li>News</li>
+              <li>Local</li>
+              <li>Entertainment</li>
+              <li>Sports</li>
+              <li>More</li>
+              <li></li>
+            </ul>
+            </div><!-- dopdown menu test-->
+          </nav>
+
+            <div class="nav navbar-right" id="secondmenubox3">
+              <span id="weather">
+                Baltimore, MD
+              </span>
+              <span id="temperature">83&deg;
+              </span>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle"
+                type="button" id="dropdownstock"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="true">
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+                  <li role="separator" class="divider"></li>
+                </ul>
+                </ul>
+              </div>  <!-- divider for dropdown ends -->
+            </div> <!-- closes div id="purplebar2" -->
+
       </div>
+    </div>
 
-    </header> <!-- closes header (top section) of page down to horizontal menu -->
-
-</br>
-</br>
+   </header> <!-- closes header (top section) of page down to horizontal menu -->
+   </br>
     <!-- <div class="col-md-12"></div> -->
 
     <div class="container" id="midsection"> <!-- starts mid-section -->
-
       <div class="social-icons" id="centerbox1">
         <span>Twitter</span>
         <span>flickr</span>
@@ -130,9 +151,13 @@
       <span class="col-md-5" id="featuredstorybottom">
         <h1>Yahoo! Acquires Tumblr.</h1>
         <p id="featuredstoryparagraphbottom">
-          Yahoo Inc. has agreed to pay $1.1 billion for Tumblr, a six-year-old company with more than 100 million users but very little revenue, a deal that highlights the shifting balance of power in the technology business.
+          Yahoo Inc. has agreed to pay $1.1 billion for Tumblr, a<br>
+          six-year-old company with more than 100 million users but<br>
+          very little revenue, a deal that highlights the shifting balance<br>
+          of power in the technology business.
         </p>
-        <span class="link" id="linktofullarticlebottom" >Learn More</span>
+        <button type="button" class="btn btn-default">Learn More</button>
+        <!-- <span class="link" id="linktofullarticlebottom" >Learn More</span> -->
       </span>
 
     </div> <!-- closes bottom section -->
