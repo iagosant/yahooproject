@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="news.scss">
   </head>
 
   <body>
@@ -24,11 +25,14 @@
           </a>
         </div> <!-- closes top horizontal menu section of header -->
       </div>
+
+
+<div class="col-md-12" id="backgroundimage">
       <div class="container" id="slider-section">
         <a href="#" class="background-image" id="slider-image">
           image
         </a>
-        <!-- <img class="background-image" src="<%= asset_path("now-you-see-me-jesse-eisenberg-image.jpg") %>"/>  -->
+
         <span class="vertical-menu">
         <span id="verticalmenulist">
           <ul>
@@ -59,6 +63,7 @@
           </span>
         </span><!-- closes featured story span -->
       </div><!-- closes slider div -->
+    </div>
 
       <div class="col-md-12" id="purplebar2">
         <div class="container" id="secondmenudiv" >
@@ -134,20 +139,26 @@
           <span>Newsday - 5 hours ago</span>
         </li>
       </ul>
+
     </div>
 
     <div id="centerbox3">
-      <li><i class="fa fa-angle-up"></i></li>
-      <div id="spacebetweenarrows"></div>
-      <li><i class="fa fa-angle-down"></i></li>
+
     </div>
 
     </div><!--closes mid-section featured stories including up and down arrows -->
+
+<div class="col-md-12" id="bottombackgroundlength">
+
 
     <div class="container slider-section-bottom"> <!--starts bottom section -->
       <a href="#" class="background-image" id="slider-image">
         image
       </a>
+
+      <div id="bottombox1"></div>
+      <div id="bottombox2"></div>
+
       <span class="col-md-5" id="featuredstorybottom">
         <h1>Yahoo! Acquires Tumblr.</h1>
         <p id="featuredstoryparagraphbottom">
@@ -156,11 +167,11 @@
           very little revenue, a deal that highlights the shifting balance<br>
           of power in the technology business.
         </p>
-        <button type="button" class="btn btn-default">Learn More</button>
+        <button type="button" class="btn btn-default" id="learnmorebutton">Learn More</button>
         <!-- <span class="link" id="linktofullarticlebottom" >Learn More</span> -->
       </span>
 
     </div> <!-- closes bottom section -->
-
+</div>
   </body>
 </html>
