@@ -20,18 +20,16 @@
           </div>
           <span class="glyphicon glyphicon-search"></span>
           </form>
-          <a href="#" class="profile-pic right box2">
-            pic
-          </a>
+          <span href="#" class="profile-pic right box2" id="circletopmenu">
+            <!-- <img class="background-image" src="<%= asset_path("yahoo_logo.png") %>" id="yahoologo"/> -->
+          </span>
         </div> <!-- closes top horizontal menu section of header -->
       </div>
 
-
+<!-- image of Jesse Eisenberg slider starts here -->
 <div class="col-md-12" id="backgroundimage">
       <div class="container" id="slider-section">
-        <a href="#" class="background-image" id="slider-image">
-          image
-        </a>
+        <a href="#" class="background-image" id="slider-image"></a>
 
         <span class="vertical-menu">
         <span id="verticalmenulist">
@@ -47,7 +45,7 @@
             <li><i class="fa fa-shopping-bag"></i></li>
             <li><i class="fa fa-plane"></i></li>
             <li><i class="fa fa-heart"></i></li>
-            <li><i class="fa fa-briefcase"></i></li>
+            <li id="last"><i class="fa fa-briefcase"></i></li>
           </ul>
         </span>
         </span>
@@ -121,7 +119,7 @@
         <span>flickr</span>
       </div>
 
-    <div class="col-sm-5" id="centerbox2">
+    <div class="col-sm-3" id="centerbox2">
       <ul>
         <li>Ocklahoma turns to mammoth task of clean-up after tornado -
           <span>Los Angeles Times - 1 hour ago</span>
@@ -139,11 +137,14 @@
           <span>Newsday - 5 hours ago</span>
         </li>
       </ul>
-
     </div>
 
     <div id="centerbox3">
-
+      <ul>
+        <li><i class="fa fa-angle-up"></i></li>
+        <li id="spacebetweenarrows"></li>
+        <li><i class="fa fa-angle-down"></i></li>
+      </ul>
     </div>
 
     </div><!--closes mid-section featured stories including up and down arrows -->
