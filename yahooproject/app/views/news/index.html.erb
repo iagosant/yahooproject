@@ -81,11 +81,16 @@
           </nav>
 
             <div class="nav navbar-right" id="secondmenubox3">
-              <span id="weather">
-                Baltimore, MD
-              </span>
-              <span id="temperature">83&deg;
-              </span>
+
+              <div class="col-sm-7" id="location_and_weather">
+                <span>
+                  <%= @location %>
+                </span>
+                <span id="temperature">
+                  <%= @temp %>&deg;
+                </span>
+              </div>
+
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle"
                 type="button" id="dropdownstock"
@@ -104,6 +109,7 @@
                 </ul>
                 </ul>
               </div>  <!-- divider for dropdown ends -->
+
             </div> <!-- closes div id="purplebar2" -->
 
       </div>
