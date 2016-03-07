@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :stories
+  resources :admins
+  resources :users
   # get 'news/index'
 
   # get 'all_stories/index'
@@ -7,6 +10,8 @@ Rails.application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+
+  post 'news/create'
 
   # You can have the root of your site routed with "root"
   root 'home_page#home'

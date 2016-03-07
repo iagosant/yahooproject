@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Source name:</strong>
+  <%= @admin.source_name %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @admin.title %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @admin.link %>
+</p>
+
+<p>
+  <strong>Synopsis:</strong>
+  <%= @admin.synopsis %>
+</p>
+
+<p>
+  <strong>Main Photo:</strong>
+  <%= image_tag @admin.main_photo.url(:medium) %>
+</p>
+
+<p>
+  <strong>Blurb:</strong>
+  <%= @admin.blurb %>
+</p>
+
+<p>
+  <strong>When:</strong>
+  <%= @admin.when %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @admin.source %>
+</p>
+
+<p>
+  <strong>Second Featured Story Title:</strong>
+  <%= @admin.second_featured_story_title %>
+</p>
+
+<p>
+  <strong>Second Featured Story Link:</strong>
+  <%= @admin.second_featured_story_link %>
+</p>
+
+<p>
+  <strong>Second Featured Story Synopsis:</strong>
+  <%= @admin.second_featured_story_synopsis %>
+</p>
+
+<p>
+  <strong>Second Featured Story Photo:</strong>
+  <%= image_tag @admin.second_story_photo.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_admin_path(@admin) %> |
+<%= link_to 'Back', admins_path %>

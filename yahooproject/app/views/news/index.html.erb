@@ -27,9 +27,12 @@
       </div>
 
 <!-- image of Jesse Eisenberg slider starts here -->
-<div class="col-md-12" id="backgroundimage">
+<div class="col-md-12" id="backgroundimage" style="background: url(<%= @main_photo %>);">
+  <!-- <span id="slider-image">
+  </span> -->
+
       <div class="container" id="slider-section">
-        <a href="#" class="background-image" id="slider-image"></a>
+
 
         <span class="vertical-menu">
         <span id="verticalmenulist">
@@ -51,13 +54,12 @@
         </span>
 
         <span class="col-md-5" id="featured-story">
-          <h1 id="title">Now You See Me: Top Grosser</h1>
+          <h1 id="title"><%= @story_title %></h1>
           <p id="featuredstoryparagraph">
-            Hit film starring Jesse Eisenberg rakes in nearly $300MM
-            <br>during opening weekend.
+            <%= @story_synopsis %>
           </p>
           <span id="linktofullarticle">
-            Read Full Story
+            <a href="<% @story_link %>">Read Full Story</a>
           </span>
         </span><!-- closes featured story span -->
       </div><!-- closes slider div -->
@@ -82,13 +84,15 @@
 
             <div class="nav navbar-right" id="secondmenubox3">
 
-              <div class="col-sm-7" id="location_and_weather">
+              <div class="col-sm-12" id="location_and_weather">
+                <span class="col-sm-5" id="enterzipcode">
                 <span>
                   <%= @location %>
                 </span>
                 <span id="temperature">
                   <%= @temp %>&deg;
                 </span>
+              </span>
               </div>
 
               <div class="dropdown">
@@ -127,8 +131,9 @@
 
     <div class="col-sm-3" id="centerbox2">
       <ul>
-        <li>Ocklahoma turns to mammoth task of clean-up after tornado -
+        <li>Oklahoma turns to mammoth task of clean-up after tornado -
           <span>Los Angeles Times - 1 hour ago</span>
+          <!-- <span>"#{@story1_source} - #{story1_when}"</span> -->
         </li>
         <li>Obama, in a Shift, to Limit Targets of Drone Strikes -
           <span>New York Times - 1 hour ago</span>
@@ -155,26 +160,24 @@
 
     </div><!--closes mid-section featured stories including up and down arrows -->
 
-<div class="col-md-12" id="bottombackgroundlength">
+<div class="col-md-12" id="bottombackgroundlength" style="background: url(<%= @second_story_photo %>);">
 
 
     <div class="container slider-section-bottom"> <!--starts bottom section -->
-      <a href="#" class="background-image" id="slider-image">
-        image
-      </a>
+      <!-- <span id="slider-image">
+        <%= image_tag @second_story_photo %>
+      </span> -->
 
       <div id="bottombox1"></div>
       <div id="bottombox2"></div>
 
       <span class="col-md-5" id="featuredstorybottom">
-        <h1>Yahoo! Acquires Tumblr.</h1>
+        <h1><%= @second_featured_story_title %></h1>
         <p id="featuredstoryparagraphbottom">
-          Yahoo Inc. has agreed to pay $1.1 billion for Tumblr, a<br>
-          six-year-old company with more than 100 million users but<br>
-          very little revenue, a deal that highlights the shifting balance<br>
-          of power in the technology business.
+        <%= @second_featured_story_synopsis %>
         </p>
-        <button type="button" class="btn btn-default" id="learnmorebutton">Learn More</button>
+        <button type="button" class="btn btn-default" id="learnmorebutton">
+          <a href="<% @second_featured_story_link %>">Learn More</a></button>
         <!-- <span class="link" id="linktofullarticlebottom" >Learn More</span> -->
       </span>
 

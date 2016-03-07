@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'Hirb'
+gem "paperclip", "~> 4.3"
+gem 'hirb'
 gem 'awesome_print'
 
 gem 'httparty'

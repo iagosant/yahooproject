@@ -1,0 +1,65 @@
+<%= form_for(@admin) do |f| %>
+  <% if @admin.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@admin.errors.count, "error") %> prohibited this admin from being saved:</h2>
+
+      <ul>
+      <% @admin.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <!-- <div class="field">
+    <%= f.label :source_name %><br>
+    <%= f.text_field :source_name %>
+  </div> -->
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :synopsis %><br>
+    <%= f.text_area :synopsis %>
+  </div>
+  <div class="field">
+    <%= f.label :main_photo %><br>
+    <%= f.file_field :main_photo %>
+  </div>
+  <div class="field">
+    <%= f.label :bulrb %><br>
+    <%= f.text_area :blurb %>
+  </div>
+  <div class="field">
+    <%= f.label :when %><br>
+    <%= f.text_field :when %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_area :source %>
+  </div>
+  <div class="field">
+    <%= f.label :second_featured_story_title %><br>
+    <%= f.text_field :second_featured_story_title %>
+  </div>
+  <div class="field">
+    <%= f.label :second_featured_story_link %><br>
+    <%= f.text_field :second_featured_story_link %>
+  </div>
+  <div class="field">
+    <%= f.label :second_featured_story_synopsis %><br>
+    <%= f.text_area :second_featured_story_synopsis %>
+  </div>
+  <div class="field">
+    <%= f.label :second_story_photo %><br>
+    <%= f.file_field :second_story_photo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

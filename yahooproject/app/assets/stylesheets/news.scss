@@ -102,20 +102,13 @@ div#slider-section{
 #backgroundimage {
 	color: #5C5C5C;
 	height: 507px;
-	background: url("/assets/now-you-see-me-jesse-eisenberg-image.jpg");
+	// background: url("/assets/now-you-see-me-jesse-eisenberg-image.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 	padding: 0px;
 	background-position: 10% 38%;
 	background-size: cover;
 }
-
-// a#slider-image {
-// 	text-align: center;
-// 	display: flex;
-// 	flex-direction: column;
-// 	height: 300px;
-// }
 
 span.vertical-menu {
 	margin-left: 80px;
@@ -153,6 +146,7 @@ span.vertical-menu {
 
 h1, #title {
 	font-size: 24px !important;
+	color: #5C5C5C;;
 }
 
 
@@ -215,6 +209,13 @@ button.btn-default {
 	flex-grow: 1;
 }
 
+#enterzipcode {
+	width: auto;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
+
 #location_and_weather {
 	display: flex;
 	align-items: center;
@@ -274,10 +275,14 @@ margin-top: 0px !important;
 	justify-content: center;
 }
 
-#bottombackgroundlength {
-	background-color: #ffffcf;
-	height: 354px;
+#rails_slider {
+	height: 540px;
 }
+
+// #bottombackgroundlength {
+// 	background-color: #ffffcf;
+// 	height: 354px;
+// }
 
 #bottombox1 {
 	display: flex;
@@ -315,6 +320,10 @@ margin-top: 0px !important;
     background-color: #9b4fb1 !important;
     border-color: #9b4fb1 !important;
 }
+
+ #learnmorebutton a {
+	 color: #fff !important;
+ }
 
 button.btn.btn-default{
 	margin-top: 15px;

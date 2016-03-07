@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zip code:</strong>
+  <%= @user.zip_code %>
+</p>
+
+<p>
+  <strong>User Profile Photo:</strong>
+  <%= image_tag @user.user_profile_photo.url(:medium) %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
