@@ -18,6 +18,8 @@ class NewsController < ApplicationController
     @story_link = Admin.find_by(id:1).link
     @main_photo = Admin.find_by(id:1).main_photo
 
+    @story = Story.all
+
     @story1_blurb = Admin.find_by(id:1).blurb
     @story1_when = Admin.find_by(id:1).when
     @story1_source = Admin.find_by(id:1).source

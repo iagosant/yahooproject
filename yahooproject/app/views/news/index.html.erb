@@ -93,7 +93,7 @@
                   <%= @temp %>&deg;
                 </span>
               </span>
-              </div>
+
 
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle"
@@ -113,6 +113,7 @@
                 </ul>
                 </ul>
               </div>  <!-- divider for dropdown ends -->
+              </div>
 
             </div> <!-- closes div id="purplebar2" -->
 
@@ -131,10 +132,18 @@
 
     <div class="col-sm-3" id="centerbox2">
       <ul>
+        <% @story.each do |stories| %>
+          <li><%= stories.blurb %>
+          <%= stories.source %>
+          <%= stories.when %></li>
+          <% end %>
+      </ul>
+
+      <!-- <ul>
         <li>Oklahoma turns to mammoth task of clean-up after tornado -
           <span>Los Angeles Times - 1 hour ago</span>
-          <!-- <span>"#{@story1_source} - #{story1_when}"</span> -->
-        </li>
+         -->
+        <!-- </li>
         <li>Obama, in a Shift, to Limit Targets of Drone Strikes -
           <span>New York Times - 1 hour ago</span>
         </li>
@@ -147,7 +156,7 @@
         <li>Merkel tops Forbes power women's list again -
           <span>Newsday - 5 hours ago</span>
         </li>
-      </ul>
+      </ul> -->
     </div>
 
     <div id="centerbox3">
