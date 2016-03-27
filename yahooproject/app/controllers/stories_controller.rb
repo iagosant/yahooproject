@@ -1,10 +1,20 @@
+require 'httparty'
+require 'json'
+NYT_MOVIES_ID = ENV["nyt_movies_id"]
+
+
+
 class StoriesController < ApplicationController
   before_action :set_story, only: [:show, :edit, :update, :destroy]
 
   # GET /stories
   # GET /stories.json
   def index
+
     @stories = Story.all
+    reviews = HTTParty.get('http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=NYT_MOVIES_ID')
+    byebug
+    # parsed_json = ActiveSupport::JSON.decode(reviews)
   end
 
   # GET /stories/1
