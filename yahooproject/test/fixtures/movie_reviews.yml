@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nyt_movie_id: 1
+  headline: MyText
+  display_title: MyString
+  mpaa_rating: MyString
+  trailer_url: MyString
+
+two:
+  nyt_movie_id: 1
+  headline: MyText
+  display_title: MyString
+  mpaa_rating: MyString
+  trailer_url: MyString

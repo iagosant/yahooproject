@@ -1,8 +1,3 @@
-require 'HTTparty'
-require 'json'
-NYT_MOVIES_ID = ENV["nyt_movies_id"]
-
-
 
 class StoriesController < ApplicationController
   before_action :set_story, only: [:show, :edit, :update, :destroy]
@@ -10,12 +5,7 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-
     @stories = Story.all
-    reviews = HTTParty.get('http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=NYT_MOVIES_ID')
-    data = reviews.parsed_response['results']
-    byebug
-
   end
 
   # GET /stories/1

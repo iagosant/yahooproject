@@ -4,6 +4,7 @@ gem "paperclip", "~> 4.3"
 gem 'hirb'
 gem 'awesome_print'
 gem 'figaro'
+gem 'json'
 
 
 gem 'httparty'

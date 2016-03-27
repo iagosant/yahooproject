@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :movie_reviews
   resources :stories
   resources :admins
   resources :users
@@ -16,7 +17,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home_page#home'
 
-  get 'reviews' => 'stories#index' 
+  get 'reviews' => 'movie_reviews#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

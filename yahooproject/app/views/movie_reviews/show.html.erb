@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nyt movie:</strong>
+  <%= @movie_review.nyt_movie_id %>
+</p>
+
+<p>
+  <strong>Headline:</strong>
+  <%= @movie_review.headline %>
+</p>
+
+<p>
+  <strong>Display title:</strong>
+  <%= @movie_review.display_title %>
+</p>
+
+<p>
+  <strong>Mpaa rating:</strong>
+  <%= @movie_review.mpaa_rating %>
+</p>
+
+<p>
+  <strong>Trailer url:</strong>
+  <%= @movie_review.trailer_url %>
+</p>
+
+<%= link_to 'Edit', edit_movie_review_path(@movie_review) %> |
+<%= link_to 'Back', movie_reviews_path %>
