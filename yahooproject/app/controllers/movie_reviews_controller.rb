@@ -1,4 +1,4 @@
-require 'httparty'
+require 'HTTparty'
 require 'json'
 NYT_MOVIES_ID = ENV["nyt_movies_id"]
 
@@ -10,6 +10,7 @@ class MovieReviewsController < ApplicationController
   # GET /movie_reviews.json
   def index
     @movie_reviews = MovieReview.all
+
     url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=ENV["nyt_movies_id"]'
     result = HTTParty.get(url)
 
@@ -30,6 +31,7 @@ class MovieReviewsController < ApplicationController
       new_movie.display_title = new_title
       new_movie.save
     end
+
 
   end
 
