@@ -32,9 +32,19 @@
 
 <br>
 
-<ul class="col-md-2">
+<!-- <ul class="col-md-2">
   <% @movie_title.each do |title| %>
     <li><%= title %></li>
+    <% end %>
+</ul>
+
+<ul class="col-md-1">
+  <% @mpaa_rating.each do |rating| %>
+    <% if rating == nil %>
+    <%= "no rating"%>
+    <% else %>
+    <li><%= rating %></li>
+    <% end %>
     <% end %>
 </ul>
 
@@ -42,4 +52,4 @@
   <% @headline.each do |headline| %>
     <li><%= headline %></li>
     <% end %>
-</ul>
+</ul> -->

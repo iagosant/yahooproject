@@ -10,7 +10,7 @@ class MovieReviewsController < ApplicationController
   # GET /movie_reviews.json
   def index
     @movie_reviews = MovieReview.all
-    url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=13e17d8d5454c16894e8874fa74fc2c5:19:74813096'
+    url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=ENV["nyt_movies_id"]'
     result = HTTParty.get(url)
 
     @recent_movies = result['results']
@@ -25,11 +25,11 @@ class MovieReviewsController < ApplicationController
       @headline << movie['headline']
     end
 
-    # @movie_title.each do |new_title|
-    #   new_movie = MovieReview.new
-    #   new_movie.display_title = new_title
-    #   new_movie.save
-    # end
+    @movie_title.each do |new_title|
+      new_movie = MovieReview.new
+      new_movie.display_title = new_title
+      new_movie.save
+    end
 
   end
 
