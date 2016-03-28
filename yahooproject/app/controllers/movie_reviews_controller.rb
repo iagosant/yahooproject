@@ -1,4 +1,4 @@
-require 'HTTparty'
+require 'httparty'
 require 'json'
 NYT_MOVIES_ID = ENV["nyt_movies_id"]
 
@@ -10,8 +10,26 @@ class MovieReviewsController < ApplicationController
   # GET /movie_reviews.json
   def index
     @movie_reviews = MovieReview.all
-    @result = HTTParty.get('http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=ENV["nyt_movies_id"]')
-    @parsed = JSON.parse(@result.body)
+    url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=13e17d8d5454c16894e8874fa74fc2c5:19:74813096'
+    result = HTTParty.get(url)
+
+    @recent_movies = result['results']
+
+    @movie_title = []
+    @mpaa_rating = []
+    @headline = []
+
+    @recent_movies.each do |movie|
+      @movie_title << movie['display_title']
+      @mpaa_rating << movie['mpaa_rating']
+      @headline << movie['headline']
+    end
+
+    # @movie_title.each do |new_title|
+    #   new_movie = MovieReview.new
+    #   new_movie.display_title = new_title
+    #   new_movie.save
+    # end
 
   end
 
