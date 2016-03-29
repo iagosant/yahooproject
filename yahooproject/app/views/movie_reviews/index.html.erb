@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<!--
 <h1>Listing Movie Reviews</h1>
 
 <table>
@@ -17,24 +17,23 @@
   <tbody>
     <% @movie_reviews.each do |movie_review| %>
       <tr>
-        <td><%= movie_review.nyt_movie_id %></td>
-        <td><%= movie_review.headline %></td>
-        <td><%= movie_review.display_title %></td>
-        <td><%= movie_review.mpaa_rating %></td>
-        <td><%= movie_review.trailer_url %></td>
-        <td><%= link_to 'Show', movie_review %></td>
-        <td><%= link_to 'Edit', edit_movie_review_path(movie_review) %></td>
-        <td><%= link_to 'Destroy', movie_review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%#= movie_review.nyt_movie_id %></td>
+        <td><%#= movie_review.headline %></td>
+        <td><%#= movie_review.display_title %></td>
+        <td><%#= movie_review.mpaa_rating %></td>
+        <td><%#= movie_review.trailer_url %></td>
+        <td><%#= link_to 'Show', movie_review %></td>
+        <td><%#= link_to 'Edit', edit_movie_review_path(movie_review) %></td>
+        <td><%#= link_to 'Destroy', movie_review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!-- <ul class="col-md-2">
+
+<ul class="col-md-2">
   <% @movie_title.each do |title| %>
     <li><%= title %></li>
     <% end %>
@@ -54,14 +53,7 @@
   <% @headline.each do |headline| %>
     <li><%= headline %></li>
     <% end %>
-</ul> -->
-=======
+</ul>
 <%= link_to 'New Movie review', new_movie_review_path %>
 
 <%= @parsed %>
->>>>>>> parent of b27d603... monday 2pm
-=======
-<%= link_to 'New Movie review', new_movie_review_path %>
-
-<%= @parsed %>
->>>>>>> parent of b27d603... monday 2pm

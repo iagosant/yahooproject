@@ -1,21 +1,20 @@
-require 'HTTparty'
+require 'httparty'
 require 'json'
 NYT_MOVIES_ID = ENV["nyt_movies_id"]
 
 
 class MovieReviewsController < ApplicationController
+  # attr_accessor :nyt_movie_id, :headline, :display_title, :mpaa_rating, :trailer_url
   before_action :set_movie_review, only: [:show, :edit, :update, :destroy]
 
-  # GET /movie_reviews
-  # GET /movie_reviews.json
+
   def index
     @movie_reviews = MovieReview.all
+    url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=13e17d8d5454c16894e8874fa74fc2c5:19:74813096'
+    result = HTTParty.get(url)['results']
 
 
-    url = 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?offset=40&order=by-title&api-key=ENV["nyt_movies_id"]'
-    result = HTTParty.get(url)
-
-    @recent_movies = result['results']
+    @recent_movies = result
 
     @movie_title = []
     @mpaa_rating = []
@@ -32,7 +31,6 @@ class MovieReviewsController < ApplicationController
       new_movie.display_title = new_title
       new_movie.save
     end
-
 
   end
 
